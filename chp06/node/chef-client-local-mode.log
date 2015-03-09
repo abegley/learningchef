@@ -1,0 +1,5376 @@
+[2015-03-09T21:27:31+00:00] WARN: No config file found or specified on command line, using command line options.
+[2015-03-09T21:27:31+00:00] WARN: No cookbooks directory found at or above current directory.  Assuming /home/alan/github/learningchef/chp06/node.
+[2015-03-09T21:27:31+00:00] INFO: Starting chef-zero on host localhost, port 8889 with repository at repository at /home/alan/github/learningchef/chp06/node
+  One version per cookbook
+
+[2015-03-09T21:27:31+00:00] INFO: Forking chef instance to converge...
+[2015-03-09T21:27:31+00:00] DEBUG: Fork successful. Waiting for new chef pid: 16020
+[2015-03-09T21:27:31+00:00] DEBUG: Forked instance now converging
+[2015-03-09T21:27:31+00:00] INFO: *** Chef 11.18.0.rc.1 ***
+[2015-03-09T21:27:31+00:00] INFO: Chef-client pid: 16020
+[2015-03-09T21:27:31+00:00] DEBUG: Chef-client request_id: 97483c2a-fac5-4c0a-a389-158ddc775dfa
+[2015-03-09T21:27:31+00:00] DEBUG: Can't load gem: cannot load such file -- libvirt.  virtualization plugin is disabled.
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing 192.168.100.0/24 dev virbr1  proto kernel  scope link  src 192.168.100.1
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing 192.168.0.0/24 dev eth0  proto kernel  scope link  src 192.168.0.31  metric 1
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing 192.168.122.0/24 dev virbr0  proto kernel  scope link  src 192.168.122.1
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing default via 192.168.0.1 dev eth0  proto static
+[2015-03-09T21:27:31+00:00] DEBUG: default_interface set to eth0
+[2015-03-09T21:27:31+00:00] DEBUG: default_gateway set to 192.168.0.1
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable ::/96 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable ::ffff:0.0.0.0/96 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 2002:a00::/24 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 2002:7f00::/24 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 2002:a9fe::/32 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 2002:ac10::/28 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 2002:c0a8::/32 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 2002:e000::/19 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing unreachable 3ffe:ffff::/32 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing fe80::/64 dev eth0  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing fe80::/64 dev virbr1  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Parsing fe80::/64 dev virbr0  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+[2015-03-09T21:27:31+00:00] DEBUG: Unable to determine default inet6 interface
+[2015-03-09T21:27:31+00:00] DEBUG: Plugin NetworkRoutes threw exception #<LoadError: cannot load such file -- sigar> /opt/chefdk/embedded/lib/ruby/site_ruby/2.1.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/opt/chefdk/embedded/lib/ruby/site_ruby/2.1.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/sigar/network_route.rb:42:in `block (2 levels) in <main>'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+/opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+/opt/chefdk/bin/chef-client:33:in `load'
+/opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:31+00:00] DEBUG: Plugin NetworkListeners threw exception #<LoadError: cannot load such file -- sigar> /opt/chefdk/embedded/lib/ruby/site_ruby/2.1.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/opt/chefdk/embedded/lib/ruby/site_ruby/2.1.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/network_listeners.rb:25:in `block (2 levels) in <main>'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+/opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+/opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+/opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+/opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+/opt/chefdk/bin/chef-client:33:in `load'
+/opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:31+00:00] DEBUG: [inet] Using default interface eth0 and default gateway 192.168.0.1 to set the default ip to 192.168.0.31
+[2015-03-09T21:27:31+00:00] DEBUG: [inet6] no default interface, picking the first ipaddress
+[2015-03-09T21:27:32+00:00] DEBUG: Plugin Mono threw #<Errno::ENOENT: No such file or directory - mono>
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `exec'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `block in fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:52:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout.rb:242:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/command.rb:33:in `shell_out'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/mono.rb:29:in `block (2 levels) in <main>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:32+00:00] DEBUG: Plugin Nodejs threw #<Errno::ENOENT: No such file or directory - node>
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `exec'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `block in fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:52:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout.rb:242:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/command.rb:33:in `shell_out'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/nodejs.rb:29:in `block (2 levels) in <main>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:32+00:00] DEBUG: Plugin Groovy threw #<Errno::ENOENT: No such file or directory - groovy>
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `exec'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `block in fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:52:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout.rb:242:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/command.rb:33:in `shell_out'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/groovy.rb:29:in `block (2 levels) in <main>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:32+00:00] DEBUG: Plugin PHP threw #<Errno::ENOENT: No such file or directory - php>
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `exec'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `block in fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:52:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout.rb:242:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/command.rb:33:in `shell_out'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/php.rb:29:in `block (2 levels) in <main>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:32+00:00] DEBUG: Plugin Erlang threw #<Errno::ENOENT: No such file or directory - erl>
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `exec'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:294:in `block in fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:276:in `fork_subprocess'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout/unix.rb:52:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/mixlib-shellout-1.6.0/lib/mixlib/shellout.rb:242:in `run_command'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/command.rb:33:in `shell_out'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/erlang.rb:28:in `block (2 levels) in <main>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:32+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:32+00:00] DEBUG: No data to collect for plugin Powershell. Continuing...
+[2015-03-09T21:27:32+00:00] DEBUG: has_ec2_mac? == false
+[2015-03-09T21:27:32+00:00] DEBUG: looks_like_ec2? == false
+[2015-03-09T21:27:33+00:00] DEBUG: Plugin GCE threw #<SocketError: getaddrinfo: Name or service not known>
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/gce_metadata.rb:29:in `pack_sockaddr_in'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/mixin/gce_metadata.rb:29:in `can_metadata_connect?'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/gce.rb:30:in `has_gce_metadata?'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/gce.rb:39:in `looks_like_gce?'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/gce.rb:43:in `block (2 levels) in <main>'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: has_euca_mac? == false
+[2015-03-09T21:27:33+00:00] DEBUG: looks_like_euca? == false
+[2015-03-09T21:27:33+00:00] DEBUG: NOT ohai openstack
+[2015-03-09T21:27:33+00:00] DEBUG: No hints present for azure.
+[2015-03-09T21:27:33+00:00] DEBUG: Plugin SSHHostKey threw #<Errno::EACCES: Permission denied @ rb_sysopen - /etc/ssh/sshd_config>
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/ssh_host_key.rb:50:in `initialize'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/ssh_host_key.rb:50:in `open'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/plugins/ssh_host_key.rb:50:in `block (2 levels) in <main>'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:82:in `run_v7_plugin'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:96:in `block in run_plugins'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `each'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:95:in `run_plugins'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai/system.rb:73:in `all_plugins'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:292:in `run_ohai'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:414:in `do_run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:213:in `block in run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `fork'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/client.rb:207:in `run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:236:in `run_chef_client'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:338:in `block in run_application'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `loop'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application/client.rb:327:in `run_application'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/lib/chef/application.rb:55:in `run'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/embedded/apps/chef/bin/chef-client:26:in `<top (required)>'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `load'
+[2015-03-09T21:27:33+00:00] DEBUG: /opt/chefdk/bin/chef-client:33:in `<main>'
+[2015-03-09T21:27:33+00:00] DEBUG: No data to collect for plugin Zpools. Continuing...
+[2015-03-09T21:27:33+00:00] DEBUG: No data to collect for plugin SystemProfile. Continuing...
+[2015-03-09T21:27:33+00:00] DEBUG: ip_scopes: cannot load gem, plugin disabled: cannot load such file -- ipaddr_extensions
+[2015-03-09T21:27:33+00:00] DEBUG: Client key is unspecified - skipping registration
+[2015-03-09T21:27:33+00:00] DEBUG: Building node object for localhost
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_request
+[2015-03-09T21:27:33+00:00] DEBUG: Initiating GET to http://localhost:8889/nodes/localhost
+[2015-03-09T21:27:33+00:00] DEBUG: ---- HTTP Request Header Data: ----
+[2015-03-09T21:27:33+00:00] DEBUG: Accept: application/json
+[2015-03-09T21:27:33+00:00] DEBUG: Accept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+[2015-03-09T21:27:33+00:00] DEBUG: X-REMOTE-REQUEST-ID: 97483c2a-fac5-4c0a-a389-158ddc775dfa
+[2015-03-09T21:27:33+00:00] DEBUG: ---- End HTTP Request Header Data ----
+[2015-03-09T21:27:33+00:00] DEBUG: #<ChefZero::RestRequest:0x000000045c19e0 @env={"GATEWAY_INTERFACE"=>"CGI/1.1", "PATH_INFO"=>"/nodes/localhost", "QUERY_STRING"=>"", "REMOTE_ADDR"=>"::1", "REMOTE_HOST"=>"localhost", "REQUEST_METHOD"=>"GET", "REQUEST_URI"=>"http://localhost:8889/nodes/localhost", "SCRIPT_NAME"=>"", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"8889", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/2.1.4/2014-10-27)", "HTTP_ACCEPT"=>"application/json", "HTTP_ACCEPT_ENCODING"=>"gzip;q=1.0,deflate;q=0.6,identity;q=0.3", "HTTP_X_REMOTE_REQUEST_ID"=>"97483c2a-fac5-4c0a-a389-158ddc775dfa", "HTTP_X_CHEF_VERSION"=>"11.18.0.rc.1", "HTTP_HOST"=>"localhost:8889", "HTTP_USER_AGENT"=>"Chef Knife/11.18.0.rc.1 (ruby-2.1.4-p265; ohai-7.4.0; x86_64-linux; +http://opscode.com)", "HTTP_CONNECTION"=>"close", "rack.version"=>[1, 2], "rack.input"=>#<StringIO:0x000000045c1f80>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "rack.url_scheme"=>"http", "HTTP_VERSION"=>"HTTP/1.1", "REQUEST_PATH"=>"/nodes/localhost"}, @rest_base_prefix=["organizations", "chef"]>
+[2015-03-09T21:27:34+00:00] DEBUG: 
+--- RESPONSE (200) ---
+{
+  "name": "localhost",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "automatic": {
+    "kernel": {
+      "name": "Linux",
+      "release": "2.6.32-504.el6.x86_64",
+      "version": "#1 SMP Wed Oct 15 04:27:16 UTC 2014",
+      "machine": "x86_64",
+      "os": "GNU/Linux",
+      "modules": {
+        "vfat": {
+          "size": "10584",
+          "refcount": "5"
+        },
+        "fat": {
+          "size": "54992",
+          "refcount": "1"
+        },
+        "fuse": {
+          "size": "79956",
+          "refcount": "0"
+        },
+        "ebtable_nat": {
+          "size": "2009",
+          "refcount": "0"
+        },
+        "ebtables": {
+          "size": "18135",
+          "refcount": "1"
+        },
+        "ipt_MASQUERADE": {
+          "size": "2466",
+          "refcount": "6"
+        },
+        "iptable_nat": {
+          "size": "6051",
+          "refcount": "1"
+        },
+        "nf_nat": {
+          "size": "23316",
+          "refcount": "2"
+        },
+        "xt_CHECKSUM": {
+          "size": "1303",
+          "refcount": "2"
+        },
+        "iptable_mangle": {
+          "size": "3349",
+          "refcount": "1"
+        },
+        "bridge": {
+          "size": "82775",
+          "refcount": "0"
+        },
+        "autofs4": {
+          "size": "26609",
+          "refcount": "3"
+        },
+        "8021q": {
+          "size": "25527",
+          "refcount": "0"
+        },
+        "garp": {
+          "size": "7152",
+          "refcount": "1"
+        },
+        "stp": {
+          "size": "2218",
+          "refcount": "2"
+        },
+        "llc": {
+          "size": "5578",
+          "refcount": "3"
+        },
+        "vboxpci": {
+          "size": "13813",
+          "refcount": "0"
+        },
+        "vboxnetadp": {
+          "size": "18384",
+          "refcount": "0"
+        },
+        "vboxnetflt": {
+          "size": "17397",
+          "refcount": "0"
+        },
+        "vboxdrv": {
+          "size": "417877",
+          "refcount": "6"
+        },
+        "cpufreq_ondemand": {
+          "size": "10544",
+          "refcount": "4"
+        },
+        "acpi_cpufreq": {
+          "size": "7763",
+          "refcount": "1"
+        },
+        "freq_table": {
+          "size": "4936",
+          "refcount": "2"
+        },
+        "mperf": {
+          "size": "1557",
+          "refcount": "1"
+        },
+        "ipt_REJECT": {
+          "size": "2351",
+          "refcount": "6"
+        },
+        "nf_conntrack_ipv4": {
+          "size": "9506",
+          "refcount": "7"
+        },
+        "nf_defrag_ipv4": {
+          "size": "1483",
+          "refcount": "1"
+        },
+        "iptable_filter": {
+          "size": "2793",
+          "refcount": "1"
+        },
+        "ip_tables": {
+          "size": "17831",
+          "refcount": "3"
+        },
+        "ip6t_REJECT": {
+          "size": "4628",
+          "refcount": "2"
+        },
+        "nf_conntrack_ipv6": {
+          "size": "8337",
+          "refcount": "3"
+        },
+        "nf_defrag_ipv6": {
+          "size": "27236",
+          "refcount": "1"
+        },
+        "xt_state": {
+          "size": "1492",
+          "refcount": "7"
+        },
+        "nf_conntrack": {
+          "size": "80390",
+          "refcount": "6"
+        },
+        "ip6table_filter": {
+          "size": "2889",
+          "refcount": "1"
+        },
+        "ip6_tables": {
+          "size": "18732",
+          "refcount": "1"
+        },
+        "ipv6": {
+          "size": "334932",
+          "refcount": "85"
+        },
+        "vhost_net": {
+          "size": "30913",
+          "refcount": "0"
+        },
+        "macvtap": {
+          "size": "10231",
+          "refcount": "1"
+        },
+        "macvlan": {
+          "size": "9890",
+          "refcount": "1"
+        },
+        "tun": {
+          "size": "16646",
+          "refcount": "3"
+        },
+        "kvm_intel": {
+          "size": "55496",
+          "refcount": "0"
+        },
+        "kvm": {
+          "size": "337772",
+          "refcount": "1"
+        },
+        "microcode": {
+          "size": "112653",
+          "refcount": "0"
+        },
+        "iTCO_wdt": {
+          "size": "7115",
+          "refcount": "0"
+        },
+        "iTCO_vendor_support": {
+          "size": "3056",
+          "refcount": "1"
+        },
+        "snd_usb_audio": {
+          "size": "122027",
+          "refcount": "1"
+        },
+        "snd_usbmidi_lib": {
+          "size": "20976",
+          "refcount": "1"
+        },
+        "snd_rawmidi": {
+          "size": "23017",
+          "refcount": "1"
+        },
+        "ipmi_si": {
+          "size": "44687",
+          "refcount": "0"
+        },
+        "ipmi_msghandler": {
+          "size": "38826",
+          "refcount": "1"
+        },
+        "uvcvideo": {
+          "size": "62688",
+          "refcount": "0"
+        },
+        "videodev": {
+          "size": "75708",
+          "refcount": "1"
+        },
+        "v4l2_compat_ioctl32": {
+          "size": "7110",
+          "refcount": "1"
+        },
+        "i2c_i801": {
+          "size": "10783",
+          "refcount": "0"
+        },
+        "tg3": {
+          "size": "161634",
+          "refcount": "0"
+        },
+        "ptp": {
+          "size": "9614",
+          "refcount": "1"
+        },
+        "pps_core": {
+          "size": "11106",
+          "refcount": "1"
+        },
+        "sg": {
+          "size": "29318",
+          "refcount": "0"
+        },
+        "lpc_ich": {
+          "size": "12995",
+          "refcount": "0"
+        },
+        "mfd_core": {
+          "size": "1895",
+          "refcount": "1"
+        },
+        "snd_hda_codec_hdmi": {
+          "size": "28922",
+          "refcount": "1"
+        },
+        "snd_hda_intel": {
+          "size": "40530",
+          "refcount": "1"
+        },
+        "snd_hda_codec": {
+          "size": "179208",
+          "refcount": "2"
+        },
+        "snd_hwdep": {
+          "size": "6780",
+          "refcount": "2"
+        },
+        "snd_seq": {
+          "size": "55727",
+          "refcount": "0"
+        },
+        "snd_seq_device": {
+          "size": "6500",
+          "refcount": "2"
+        },
+        "snd_pcm": {
+          "size": "87790",
+          "refcount": "4"
+        },
+        "snd_timer": {
+          "size": "22443",
+          "refcount": "2"
+        },
+        "snd": {
+          "size": "70953",
+          "refcount": "15"
+        },
+        "soundcore": {
+          "size": "7958",
+          "refcount": "1"
+        },
+        "snd_page_alloc": {
+          "size": "8856",
+          "refcount": "2"
+        },
+        "shpchp": {
+          "size": "29130",
+          "refcount": "0"
+        },
+        "ext4": {
+          "size": "378476",
+          "refcount": "3"
+        },
+        "jbd2": {
+          "size": "93427",
+          "refcount": "1"
+        },
+        "mbcache": {
+          "size": "8193",
+          "refcount": "1"
+        },
+        "sr_mod": {
+          "size": "15049",
+          "refcount": "0"
+        },
+        "cdrom": {
+          "size": "39085",
+          "refcount": "1"
+        },
+        "sd_mod": {
+          "size": "36998",
+          "refcount": "10"
+        },
+        "crc_t10dif": {
+          "size": "1305",
+          "refcount": "1"
+        },
+        "usb_storage": {
+          "size": "49100",
+          "refcount": "5"
+        },
+        "pata_acpi": {
+          "size": "3701",
+          "refcount": "0"
+        },
+        "ata_generic": {
+          "size": "3837",
+          "refcount": "0"
+        },
+        "ata_piix": {
+          "size": "24409",
+          "refcount": "2"
+        },
+        "nouveau": {
+          "size": "1137798",
+          "refcount": "2"
+        },
+        "ttm": {
+          "size": "81140",
+          "refcount": "1"
+        },
+        "drm_kms_helper": {
+          "size": "82994",
+          "refcount": "1"
+        },
+        "drm": {
+          "size": "291252",
+          "refcount": "4"
+        },
+        "i2c_algo_bit": {
+          "size": "5711",
+          "refcount": "1"
+        },
+        "i2c_core": {
+          "size": "29964",
+          "refcount": "6"
+        },
+        "mxm_wmi": {
+          "size": "1967",
+          "refcount": "1"
+        },
+        "video": {
+          "size": "20610",
+          "refcount": "1"
+        },
+        "output": {
+          "size": "2409",
+          "refcount": "1"
+        },
+        "wmi": {
+          "size": "6287",
+          "refcount": "2"
+        },
+        "dm_mirror": {
+          "size": "14384",
+          "refcount": "0"
+        },
+        "dm_region_hash": {
+          "size": "12085",
+          "refcount": "1"
+        },
+        "dm_log": {
+          "size": "9930",
+          "refcount": "2"
+        },
+        "dm_mod": {
+          "size": "95622",
+          "refcount": "11"
+        }
+      }
+    },
+    "os": "linux",
+    "os_version": "2.6.32-504.el6.x86_64",
+    "lsb": {
+
+    },
+    "platform": "centos",
+    "platform_version": "6.6",
+    "platform_family": "rhel",
+    "virtualization": {
+      "systems": {
+        "kvm": "host"
+      },
+      "system": "kvm",
+      "role": "host"
+    },
+    "network": {
+      "interfaces": {
+        "lo": {
+          "mtu": "65536",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "prefixlen": "8",
+              "netmask": "255.0.0.0",
+              "scope": "Node"
+            },
+            "::1": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Node"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            }
+          ]
+        },
+        "eth0": {
+          "type": "eth",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "3C:D9:2B:7A:94:AE": {
+              "family": "lladdr"
+            },
+            "192.168.0.31": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.0.255",
+              "scope": "Global"
+            },
+            "fe80::3ed9:2bff:fe7a:94ae": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "state": "up",
+          "arp": {
+            "192.168.0.1": "34:08:04:97:5a:93"
+          },
+          "routes": [
+            {
+              "destination": "192.168.0.0/24",
+              "family": "inet",
+              "scope": "link",
+              "metric": "1",
+              "proto": "kernel",
+              "src": "192.168.0.31"
+            },
+            {
+              "destination": "default",
+              "family": "inet",
+              "via": "192.168.0.1",
+              "proto": "static"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        },
+        "virbr1": {
+          "type": "virbr",
+          "number": "1",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:7A:C6:32": {
+              "family": "lladdr"
+            },
+            "192.168.100.1": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.100.255",
+              "scope": "Global"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "192.168.100.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.100.1"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        },
+        "virbr1-nic": {
+          "type": "virbr",
+          "number": "1-nic",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:7A:C6:32": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "virbr0": {
+          "type": "virbr",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:19:9E:D5": {
+              "family": "lladdr"
+            },
+            "192.168.122.1": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.122.255",
+              "scope": "Global"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "192.168.122.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.122.1"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        },
+        "virbr0-nic": {
+          "type": "virbr",
+          "number": "0-nic",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:19:9E:D5": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet0": {
+          "type": "vboxnet",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:00": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet1": {
+          "type": "vboxnet",
+          "number": "1",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:01": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet2": {
+          "type": "vboxnet",
+          "number": "2",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:02": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet3": {
+          "type": "vboxnet",
+          "number": "3",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:03": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        }
+      },
+      "default_interface": "eth0",
+      "default_gateway": "192.168.0.1"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "lo": {
+            "rx": {
+              "bytes": "67712271",
+              "packets": "711834",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "67712271",
+              "packets": "711834",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "eth0": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "12329356",
+              "packets": "140980",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "359616267",
+              "packets": "247113",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "virbr1": {
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "virbr1-nic": {
+            "tx": {
+              "queuelen": "500",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "virbr0": {
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "virbr0-nic": {
+            "tx": {
+              "queuelen": "500",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet0": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet1": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet2": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet3": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          }
+        }
+      }
+    },
+    "ipaddress": "192.168.0.31",
+    "macaddress": "3C:D9:2B:7A:94:AE",
+    "ip6address": "fe80::3ed9:2bff:fe7a:94ae",
+    "filesystem": {
+      "/dev/mapper/vg_master-lv_root": {
+        "kb_size": "51475068",
+        "kb_used": "14578060",
+        "kb_available": "34275568",
+        "percent_used": "30%",
+        "mount": "/",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "tmpfs": {
+        "kb_size": "6678068",
+        "kb_used": "25864",
+        "kb_available": "6652204",
+        "percent_used": "1%",
+        "mount": "/dev/shm",
+        "total_inodes": "1669517",
+        "inodes_used": "103",
+        "inodes_available": "1669414",
+        "inodes_percent_used": "1%",
+        "fs_type": "tmpfs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "/dev/sda1": {
+        "kb_size": "487652",
+        "kb_used": "34208",
+        "kb_available": "427844",
+        "percent_used": "8%",
+        "mount": "/boot",
+        "total_inodes": "128016",
+        "inodes_used": "39",
+        "inodes_available": "127977",
+        "inodes_percent_used": "1%",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "/dev/mapper/vg_master-lv_home": {
+        "kb_size": "183105676",
+        "kb_used": "62041468",
+        "kb_available": "111756256",
+        "percent_used": "36%",
+        "mount": "/home",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "/dev/sdb6": {
+        "kb_size": "255716",
+        "kb_used": "4",
+        "kb_available": "255712",
+        "percent_used": "1%",
+        "mount": "/media/Hypervisor2",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdb4": {
+        "kb_size": "4031",
+        "kb_used": "200",
+        "kb_available": "3832",
+        "percent_used": "5%",
+        "mount": "/media/Hypervisor0",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdb5": {
+        "kb_size": "255716",
+        "kb_used": "91336",
+        "kb_available": "164380",
+        "percent_used": "36%",
+        "mount": "/media/Hypervisor1",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdb8": {
+        "kb_size": "292752",
+        "kb_used": "144096",
+        "kb_available": "148656",
+        "percent_used": "50%",
+        "mount": "/media/Hypervisor3",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdc1": {
+        "kb_size": "122820256",
+        "kb_used": "20291424",
+        "kb_available": "102528832",
+        "percent_used": "17%",
+        "mount": "/media/UNTITLED",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      " ": {
+        "total_inodes": "11640832",
+        "inodes_used": "85422",
+        "inodes_available": "11555410",
+        "inodes_percent_used": "1%",
+        "mount": "/home"
+      },
+      "proc": {
+        "mount": "/proc",
+        "fs_type": "proc",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "sysfs": {
+        "mount": "/sys",
+        "fs_type": "sysfs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "devpts": {
+        "mount": "/dev/pts",
+        "fs_type": "devpts",
+        "mount_options": [
+          "rw",
+          "gid=5",
+          "mode=620"
+        ]
+      },
+      "none": {
+        "mount": "/proc/sys/fs/binfmt_misc",
+        "fs_type": "binfmt_misc",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "rootfs": {
+        "mount": "/",
+        "fs_type": "rootfs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "devtmpfs": {
+        "mount": "/dev",
+        "fs_type": "devtmpfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "size=6666732k",
+          "nr_inodes=1666683",
+          "mode=755"
+        ]
+      },
+      "/proc/bus/usb": {
+        "mount": "/proc/bus/usb",
+        "fs_type": "usbfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "cgroup": {
+        "mount": "/cgroup/cpuset",
+        "fs_type": "cgroup",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "cpuset"
+        ]
+      },
+      "/etc/auto.misc": {
+        "mount": "/misc",
+        "fs_type": "autofs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "fd=7",
+          "pgrp=2682",
+          "timeout=300",
+          "minproto=5",
+          "maxproto=5",
+          "indirect"
+        ]
+      },
+      "-hosts": {
+        "mount": "/net",
+        "fs_type": "autofs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "fd=13",
+          "pgrp=2682",
+          "timeout=300",
+          "minproto=5",
+          "maxproto=5",
+          "indirect"
+        ]
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "5095420kB",
+        "free": "5095420kB"
+      },
+      "total": "13356136kB",
+      "free": "5830288kB",
+      "buffers": "210508kB",
+      "cached": "3898284kB",
+      "active": "3447948kB",
+      "inactive": "3003584kB",
+      "dirty": "3828kB",
+      "writeback": "0kB",
+      "anon_pages": "2342944kB",
+      "mapped": "912264kB",
+      "slab": "286396kB",
+      "slab_reclaimable": "233116kB",
+      "slab_unreclaim": "53280kB",
+      "page_tables": "60952kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "11773488kB",
+      "committed_as": "10433640kB",
+      "vmalloc_total": "34359738367kB",
+      "vmalloc_used": "152312kB",
+      "vmalloc_chunk": "34359546636kB"
+    },
+    "cpu": {
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "0",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "1": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "1",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "2": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "2",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "3": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "3",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "total": 4,
+      "real": 1
+    },
+    "languages": {
+      "lua": {
+        "version": "5.1.4"
+      },
+      "ruby": {
+        "platform": "x86_64-linux",
+        "version": "2.1.4",
+        "release_date": "2014-10-27",
+        "target": "x86_64-unknown-linux-gnu",
+        "target_cpu": "x86_64",
+        "target_vendor": "unknown",
+        "target_os": "linux",
+        "host": "x86_64-unknown-linux-gnu",
+        "host_cpu": "x86_64",
+        "host_os": "linux-gnu",
+        "host_vendor": "unknown",
+        "bin_dir": "/opt/chefdk/embedded/bin",
+        "ruby_bin": "/opt/chefdk/embedded/bin/ruby",
+        "gems_dir": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0",
+        "gem_bin": "/opt/chefdk/embedded/bin/gem"
+      },
+      "python": {
+        "version": "2.6.6",
+        "builddate": "Jan 22 2014, 09:42:36"
+      },
+      "perl": {
+        "version": "5.10.1",
+        "archname": "x86_64-linux-thread-multi"
+      },
+      "java": {
+        "version": "1.8.0_25",
+        "runtime": {
+          "name": "Java(TM) SE Runtime Environment",
+          "build": "1.8.0_25-b17"
+        },
+        "hotspot": {
+          "name": "Java HotSpot(TM) 64-Bit Server VM",
+          "build": "25.25-b02, mixed mode"
+        }
+      },
+      "c": {
+        "gcc": {
+          "version": "4.4.7",
+          "description": "gcc version 4.4.7 20120313 (Red Hat 4.4.7-11) (GCC) "
+        },
+        "glibc": {
+          "version": "2.12",
+          "description": "GNU C Library stable release version 2.12, by Roland McGrath et al."
+        }
+      }
+    },
+    "cloud_v2": null,
+    "etc": {
+      "passwd": {
+        "root": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 0,
+          "shell": "/bin/bash",
+          "gecos": "root"
+        },
+        "bin": {
+          "dir": "/bin",
+          "gid": 1,
+          "uid": 1,
+          "shell": "/sbin/nologin",
+          "gecos": "bin"
+        },
+        "daemon": {
+          "dir": "/sbin",
+          "gid": 2,
+          "uid": 2,
+          "shell": "/sbin/nologin",
+          "gecos": "daemon"
+        },
+        "adm": {
+          "dir": "/var/adm",
+          "gid": 4,
+          "uid": 3,
+          "shell": "/sbin/nologin",
+          "gecos": "adm"
+        },
+        "lp": {
+          "dir": "/var/spool/lpd",
+          "gid": 7,
+          "uid": 4,
+          "shell": "/sbin/nologin",
+          "gecos": "lp"
+        },
+        "sync": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 5,
+          "shell": "/bin/sync",
+          "gecos": "sync"
+        },
+        "shutdown": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 6,
+          "shell": "/sbin/shutdown",
+          "gecos": "shutdown"
+        },
+        "halt": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 7,
+          "shell": "/sbin/halt",
+          "gecos": "halt"
+        },
+        "mail": {
+          "dir": "/var/spool/mail",
+          "gid": 12,
+          "uid": 8,
+          "shell": "/sbin/nologin",
+          "gecos": "mail"
+        },
+        "uucp": {
+          "dir": "/var/spool/uucp",
+          "gid": 14,
+          "uid": 10,
+          "shell": "/sbin/nologin",
+          "gecos": "uucp"
+        },
+        "operator": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 11,
+          "shell": "/sbin/nologin",
+          "gecos": "operator"
+        },
+        "games": {
+          "dir": "/usr/games",
+          "gid": 100,
+          "uid": 12,
+          "shell": "/sbin/nologin",
+          "gecos": "games"
+        },
+        "gopher": {
+          "dir": "/var/gopher",
+          "gid": 30,
+          "uid": 13,
+          "shell": "/sbin/nologin",
+          "gecos": "gopher"
+        },
+        "ftp": {
+          "dir": "/var/ftp",
+          "gid": 50,
+          "uid": 14,
+          "shell": "/sbin/nologin",
+          "gecos": "FTP User"
+        },
+        "nobody": {
+          "dir": "/",
+          "gid": 99,
+          "uid": 99,
+          "shell": "/sbin/nologin",
+          "gecos": "Nobody"
+        },
+        "dbus": {
+          "dir": "/",
+          "gid": 81,
+          "uid": 81,
+          "shell": "/sbin/nologin",
+          "gecos": "System message bus"
+        },
+        "rpc": {
+          "dir": "/var/cache/rpcbind",
+          "gid": 32,
+          "uid": 32,
+          "shell": "/sbin/nologin",
+          "gecos": "Rpcbind Daemon"
+        },
+        "vcsa": {
+          "dir": "/dev",
+          "gid": 69,
+          "uid": 69,
+          "shell": "/sbin/nologin",
+          "gecos": "virtual console memory owner"
+        },
+        "rtkit": {
+          "dir": "/proc",
+          "gid": 497,
+          "uid": 499,
+          "shell": "/sbin/nologin",
+          "gecos": "RealtimeKit"
+        },
+        "avahi-autoipd": {
+          "dir": "/var/lib/avahi-autoipd",
+          "gid": 170,
+          "uid": 170,
+          "shell": "/sbin/nologin",
+          "gecos": "Avahi IPv4LL Stack"
+        },
+        "abrt": {
+          "dir": "/etc/abrt",
+          "gid": 173,
+          "uid": 173,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "rpcuser": {
+          "dir": "/var/lib/nfs",
+          "gid": 29,
+          "uid": 29,
+          "shell": "/sbin/nologin",
+          "gecos": "RPC Service User"
+        },
+        "nfsnobody": {
+          "dir": "/var/lib/nfs",
+          "gid": 65534,
+          "uid": 65534,
+          "shell": "/sbin/nologin",
+          "gecos": "Anonymous NFS User"
+        },
+        "saslauth": {
+          "dir": "/var/empty/saslauth",
+          "gid": 76,
+          "uid": 498,
+          "shell": "/sbin/nologin",
+          "gecos": "Saslauthd user"
+        },
+        "postfix": {
+          "dir": "/var/spool/postfix",
+          "gid": 89,
+          "uid": 89,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "haldaemon": {
+          "dir": "/",
+          "gid": 68,
+          "uid": 68,
+          "shell": "/sbin/nologin",
+          "gecos": "HAL daemon"
+        },
+        "gdm": {
+          "dir": "/var/lib/gdm",
+          "gid": 42,
+          "uid": 42,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "ntp": {
+          "dir": "/etc/ntp",
+          "gid": 38,
+          "uid": 38,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "radvd": {
+          "dir": "/",
+          "gid": 75,
+          "uid": 75,
+          "shell": "/sbin/nologin",
+          "gecos": "radvd user"
+        },
+        "pulse": {
+          "dir": "/var/run/pulse",
+          "gid": 495,
+          "uid": 497,
+          "shell": "/sbin/nologin",
+          "gecos": "PulseAudio System Daemon"
+        },
+        "qemu": {
+          "dir": "/",
+          "gid": 107,
+          "uid": 107,
+          "shell": "/sbin/nologin",
+          "gecos": "qemu user"
+        },
+        "sshd": {
+          "dir": "/var/empty/sshd",
+          "gid": 74,
+          "uid": 74,
+          "shell": "/sbin/nologin",
+          "gecos": "Privilege-separated SSH"
+        },
+        "tcpdump": {
+          "dir": "/",
+          "gid": 72,
+          "uid": 72,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "oprofile": {
+          "dir": "/home/oprofile",
+          "gid": 16,
+          "uid": 16,
+          "shell": "/sbin/nologin",
+          "gecos": "Special user account to be used by OProfile"
+        },
+        "alan": {
+          "dir": "/home/alan",
+          "gid": 500,
+          "uid": 500,
+          "shell": "/bin/bash",
+          "gecos": "Alan"
+        },
+        "oracle": {
+          "dir": "/u01/app/oracle",
+          "gid": 501,
+          "uid": 501,
+          "shell": "/bin/bash",
+          "gecos": ""
+        },
+        "apache": {
+          "dir": "/var/www",
+          "gid": 48,
+          "uid": 48,
+          "shell": "/sbin/nologin",
+          "gecos": "Apache"
+        },
+        "opscode": {
+          "dir": "/opt/opscode/embedded",
+          "gid": 491,
+          "uid": 496,
+          "shell": "/bin/sh",
+          "gecos": ""
+        },
+        "opscode-pgsql": {
+          "dir": "/var/opt/opscode/postgresql",
+          "gid": 490,
+          "uid": 495,
+          "shell": "/bin/sh",
+          "gecos": ""
+        }
+      },
+      "group": {
+        "root": {
+          "gid": 0,
+          "members": [
+
+          ]
+        },
+        "bin": {
+          "gid": 1,
+          "members": [
+            "bin",
+            "daemon"
+          ]
+        },
+        "daemon": {
+          "gid": 2,
+          "members": [
+            "bin",
+            "daemon"
+          ]
+        },
+        "sys": {
+          "gid": 3,
+          "members": [
+            "bin",
+            "adm"
+          ]
+        },
+        "adm": {
+          "gid": 4,
+          "members": [
+            "adm",
+            "daemon"
+          ]
+        },
+        "tty": {
+          "gid": 5,
+          "members": [
+
+          ]
+        },
+        "disk": {
+          "gid": 6,
+          "members": [
+
+          ]
+        },
+        "lp": {
+          "gid": 7,
+          "members": [
+            "daemon"
+          ]
+        },
+        "mem": {
+          "gid": 8,
+          "members": [
+
+          ]
+        },
+        "kmem": {
+          "gid": 9,
+          "members": [
+
+          ]
+        },
+        "wheel": {
+          "gid": 10,
+          "members": [
+
+          ]
+        },
+        "mail": {
+          "gid": 12,
+          "members": [
+            "mail",
+            "postfix"
+          ]
+        },
+        "uucp": {
+          "gid": 14,
+          "members": [
+
+          ]
+        },
+        "man": {
+          "gid": 15,
+          "members": [
+
+          ]
+        },
+        "games": {
+          "gid": 20,
+          "members": [
+
+          ]
+        },
+        "gopher": {
+          "gid": 30,
+          "members": [
+
+          ]
+        },
+        "video": {
+          "gid": 39,
+          "members": [
+
+          ]
+        },
+        "dip": {
+          "gid": 40,
+          "members": [
+
+          ]
+        },
+        "ftp": {
+          "gid": 50,
+          "members": [
+
+          ]
+        },
+        "lock": {
+          "gid": 54,
+          "members": [
+
+          ]
+        },
+        "audio": {
+          "gid": 63,
+          "members": [
+
+          ]
+        },
+        "nobody": {
+          "gid": 99,
+          "members": [
+
+          ]
+        },
+        "users": {
+          "gid": 100,
+          "members": [
+
+          ]
+        },
+        "dbus": {
+          "gid": 81,
+          "members": [
+
+          ]
+        },
+        "utmp": {
+          "gid": 22,
+          "members": [
+
+          ]
+        },
+        "utempter": {
+          "gid": 35,
+          "members": [
+
+          ]
+        },
+        "rpc": {
+          "gid": 32,
+          "members": [
+
+          ]
+        },
+        "desktop_admin_r": {
+          "gid": 499,
+          "members": [
+
+          ]
+        },
+        "desktop_user_r": {
+          "gid": 498,
+          "members": [
+
+          ]
+        },
+        "floppy": {
+          "gid": 19,
+          "members": [
+
+          ]
+        },
+        "vcsa": {
+          "gid": 69,
+          "members": [
+
+          ]
+        },
+        "rtkit": {
+          "gid": 497,
+          "members": [
+
+          ]
+        },
+        "avahi-autoipd": {
+          "gid": 170,
+          "members": [
+
+          ]
+        },
+        "abrt": {
+          "gid": 173,
+          "members": [
+
+          ]
+        },
+        "cdrom": {
+          "gid": 11,
+          "members": [
+
+          ]
+        },
+        "tape": {
+          "gid": 33,
+          "members": [
+
+          ]
+        },
+        "dialout": {
+          "gid": 18,
+          "members": [
+
+          ]
+        },
+        "rpcuser": {
+          "gid": 29,
+          "members": [
+
+          ]
+        },
+        "nfsnobody": {
+          "gid": 65534,
+          "members": [
+
+          ]
+        },
+        "cgred": {
+          "gid": 496,
+          "members": [
+
+          ]
+        },
+        "saslauth": {
+          "gid": 76,
+          "members": [
+
+          ]
+        },
+        "postdrop": {
+          "gid": 90,
+          "members": [
+
+          ]
+        },
+        "postfix": {
+          "gid": 89,
+          "members": [
+
+          ]
+        },
+        "wbpriv": {
+          "gid": 88,
+          "members": [
+
+          ]
+        },
+        "haldaemon": {
+          "gid": 68,
+          "members": [
+            "haldaemon"
+          ]
+        },
+        "gdm": {
+          "gid": 42,
+          "members": [
+
+          ]
+        },
+        "ntp": {
+          "gid": 38,
+          "members": [
+
+          ]
+        },
+        "radvd": {
+          "gid": 75,
+          "members": [
+
+          ]
+        },
+        "pulse": {
+          "gid": 495,
+          "members": [
+
+          ]
+        },
+        "pulse-access": {
+          "gid": 494,
+          "members": [
+
+          ]
+        },
+        "fuse": {
+          "gid": 493,
+          "members": [
+
+          ]
+        },
+        "kvm": {
+          "gid": 36,
+          "members": [
+            "qemu"
+          ]
+        },
+        "qemu": {
+          "gid": 107,
+          "members": [
+
+          ]
+        },
+        "sshd": {
+          "gid": 74,
+          "members": [
+
+          ]
+        },
+        "tcpdump": {
+          "gid": 72,
+          "members": [
+
+          ]
+        },
+        "stapusr": {
+          "gid": 156,
+          "members": [
+
+          ]
+        },
+        "stapsys": {
+          "gid": 157,
+          "members": [
+
+          ]
+        },
+        "stapdev": {
+          "gid": 158,
+          "members": [
+
+          ]
+        },
+        "oprofile": {
+          "gid": 16,
+          "members": [
+
+          ]
+        },
+        "slocate": {
+          "gid": 21,
+          "members": [
+
+          ]
+        },
+        "alan": {
+          "gid": 500,
+          "members": [
+
+          ]
+        },
+        "vboxusers": {
+          "gid": 492,
+          "members": [
+
+          ]
+        },
+        "dba": {
+          "gid": 501,
+          "members": [
+
+          ]
+        },
+        "apache": {
+          "gid": 48,
+          "members": [
+
+          ]
+        },
+        "opscode": {
+          "gid": 491,
+          "members": [
+            "opscode"
+          ]
+        },
+        "opscode-pgsql": {
+          "gid": 490,
+          "members": [
+
+          ]
+        }
+      }
+    },
+    "current_user": "alan",
+    "root_group": "root",
+    "chef_packages": {
+      "chef": {
+        "version": "11.18.0.rc.1",
+        "chef_root": "/opt/chefdk/embedded/apps/chef/lib"
+      },
+      "ohai": {
+        "version": "7.4.0",
+        "ohai_root": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai"
+      }
+    },
+    "init_package": "init",
+    "block_device": {
+      "ram0": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram1": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram2": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram3": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram4": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram5": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram6": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram7": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram8": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram9": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram10": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram11": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram12": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram13": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram14": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram15": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "loop0": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop1": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop2": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop3": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop4": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop5": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop6": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop7": {
+        "size": "0",
+        "removable": "0"
+      },
+      "sda": {
+        "size": "488397168",
+        "removable": "0",
+        "model": "VB0250EAVER",
+        "rev": "HPG0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "ATA"
+      },
+      "sr0": {
+        "size": "2097151",
+        "removable": "1",
+        "model": "DVDROM DH40N",
+        "rev": "IS01",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "hp"
+      },
+      "dm-0": {
+        "size": "104857600",
+        "removable": "0"
+      },
+      "dm-1": {
+        "size": "10190848",
+        "removable": "0"
+      },
+      "sdb": {
+        "size": "3940352",
+        "removable": "1",
+        "model": "USB Disk",
+        "rev": "8.07",
+        "state": "running",
+        "timeout": "30",
+        "vendor": ""
+      },
+      "dm-2": {
+        "size": "372318208",
+        "removable": "0"
+      },
+      "sdc": {
+        "size": "245764608",
+        "removable": "1",
+        "model": "DataTraveler 3.0",
+        "rev": "PMAP",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "Kingston"
+      }
+    },
+    "command": {
+      "ps": "ps -ef"
+    },
+    "dmi": {
+      "dmidecode_version": "2.12"
+    },
+    "keys": {
+      "ssh": {
+
+      }
+    },
+    "ohai_time": 1425936425.1407294,
+    "uptime_seconds": 4198,
+    "uptime": "1 hours 09 minutes 58 seconds",
+    "idletime_seconds": 15149,
+    "idletime": "4 hours 12 minutes 29 seconds",
+    "hostname": "master",
+    "machinename": "master.localdomain",
+    "fqdn": "localhost",
+    "domain": null,
+    "recipes": [
+
+    ],
+    "roles": [
+
+    ]
+  },
+  "json_class": "Chef::Node",
+  "chef_type": "node",
+  "chef_environment": "_default",
+  "override": {
+
+  },
+  "default": {
+
+  },
+  "run_list": [
+
+  ]
+}
+
+--- END RESPONSE ---
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Status and Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: HTTP 1.1 200 OK 
+[2015-03-09T21:27:34+00:00] DEBUG: content-type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: server: chef-zero
+[2015-03-09T21:27:34+00:00] DEBUG: date: Mon, 09 Mar 2015 21:27:34 GMT
+[2015-03-09T21:27:34+00:00] DEBUG: content-length: 52652
+[2015-03-09T21:27:34+00:00] DEBUG: connection: close
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Status/Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length validated correctly.
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Extracting run list from JSON attributes provided on command line
+[2015-03-09T21:27:34+00:00] DEBUG: Applying attributes from json file
+[2015-03-09T21:27:34+00:00] DEBUG: Platform is centos version 6.6
+[2015-03-09T21:27:34+00:00] INFO: Run List is []
+[2015-03-09T21:27:34+00:00] INFO: Run List expands to []
+[2015-03-09T21:27:34+00:00] INFO: Starting Chef Run for localhost
+[2015-03-09T21:27:34+00:00] INFO: Running start handlers
+[2015-03-09T21:27:34+00:00] INFO: Start handlers complete.
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Initiating POST to http://localhost:8889/reports/nodes/localhost/runs
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Request Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: X-Ops-Reporting-Protocol-Version: 0.1.0
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: Accept: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: Accept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+[2015-03-09T21:27:34+00:00] DEBUG: X-REMOTE-REQUEST-ID: 97483c2a-fac5-4c0a-a389-158ddc775dfa
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length: 107
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Request Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: #<ChefZero::RestRequest:0x00000004648788 @env={"CONTENT_LENGTH"=>"107", "CONTENT_TYPE"=>"application/json", "GATEWAY_INTERFACE"=>"CGI/1.1", "PATH_INFO"=>"/reports/nodes/localhost/runs", "QUERY_STRING"=>"", "REMOTE_ADDR"=>"::1", "REMOTE_HOST"=>"localhost", "REQUEST_METHOD"=>"POST", "REQUEST_URI"=>"http://localhost:8889/reports/nodes/localhost/runs", "SCRIPT_NAME"=>"", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"8889", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/2.1.4/2014-10-27)", "HTTP_X_OPS_REPORTING_PROTOCOL_VERSION"=>"0.1.0", "HTTP_ACCEPT"=>"application/json", "HTTP_ACCEPT_ENCODING"=>"gzip;q=1.0,deflate;q=0.6,identity;q=0.3", "HTTP_X_REMOTE_REQUEST_ID"=>"97483c2a-fac5-4c0a-a389-158ddc775dfa", "HTTP_X_CHEF_VERSION"=>"11.18.0.rc.1", "HTTP_HOST"=>"localhost:8889", "HTTP_USER_AGENT"=>"Chef Knife/11.18.0.rc.1 (ruby-2.1.4-p265; ohai-7.4.0; x86_64-linux; +http://opscode.com)", "HTTP_CONNECTION"=>"close", "rack.version"=>[1, 2], "rack.input"=>#<StringIO:0x00000004648ee0>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "rack.url_scheme"=>"http", "HTTP_VERSION"=>"HTTP/1.1", "REQUEST_PATH"=>"/reports/nodes/localhost/runs"}, @rest_base_prefix=["organizations", "chef"]>
+[2015-03-09T21:27:34+00:00] DEBUG: 
+--- RESPONSE (404) ---
+{
+  "error": [
+    "Object not found: /reports/nodes/localhost/runs"
+  ]
+}
+
+--- END RESPONSE ---
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Status and Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: HTTP 1.1 404 Not Found 
+[2015-03-09T21:27:34+00:00] DEBUG: content-type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: server: chef-zero
+[2015-03-09T21:27:34+00:00] DEBUG: date: Mon, 09 Mar 2015 21:27:34 GMT
+[2015-03-09T21:27:34+00:00] DEBUG: content-length: 75
+[2015-03-09T21:27:34+00:00] DEBUG: connection: close
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Status/Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length validated correctly.
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_response
+[2015-03-09T21:27:34+00:00] INFO: HTTP Request Returned 404 Not Found : Object not found: /reports/nodes/localhost/runs
+[2015-03-09T21:27:34+00:00] DEBUG: Reporting error starting run. URL: reports/nodes/localhost/runs Received 404. Disabling reporting for run.
+[2015-03-09T21:27:34+00:00] DEBUG: Synchronizing cookbooks
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Initiating POST to http://localhost:8889/environments/_default/cookbook_versions
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Request Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: Accept: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: Accept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+[2015-03-09T21:27:34+00:00] DEBUG: X-REMOTE-REQUEST-ID: 97483c2a-fac5-4c0a-a389-158ddc775dfa
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length: 15
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Request Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: #<ChefZero::RestRequest:0x00000004600ca8 @env={"CONTENT_LENGTH"=>"15", "CONTENT_TYPE"=>"application/json", "GATEWAY_INTERFACE"=>"CGI/1.1", "PATH_INFO"=>"/environments/_default/cookbook_versions", "QUERY_STRING"=>"", "REMOTE_ADDR"=>"::1", "REMOTE_HOST"=>"localhost", "REQUEST_METHOD"=>"POST", "REQUEST_URI"=>"http://localhost:8889/environments/_default/cookbook_versions", "SCRIPT_NAME"=>"", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"8889", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/2.1.4/2014-10-27)", "HTTP_ACCEPT"=>"application/json", "HTTP_ACCEPT_ENCODING"=>"gzip;q=1.0,deflate;q=0.6,identity;q=0.3", "HTTP_X_REMOTE_REQUEST_ID"=>"97483c2a-fac5-4c0a-a389-158ddc775dfa", "HTTP_X_CHEF_VERSION"=>"11.18.0.rc.1", "HTTP_HOST"=>"localhost:8889", "HTTP_USER_AGENT"=>"Chef Knife/11.18.0.rc.1 (ruby-2.1.4-p265; ohai-7.4.0; x86_64-linux; +http://opscode.com)", "HTTP_CONNECTION"=>"close", "rack.version"=>[1, 2], "rack.input"=>#<StringIO:0x00000004601720>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "rack.url_scheme"=>"http", "HTTP_VERSION"=>"HTTP/1.1", "REQUEST_PATH"=>"/environments/_default/cookbook_versions"}, @rest_base_prefix=["organizations", "chef"]>
+[2015-03-09T21:27:34+00:00] DEBUG: 
+--- RESPONSE (200) ---
+{
+
+}
+
+--- END RESPONSE ---
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Status and Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: HTTP 1.1 200 OK 
+[2015-03-09T21:27:34+00:00] DEBUG: content-type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: server: chef-zero
+[2015-03-09T21:27:34+00:00] DEBUG: date: Mon, 09 Mar 2015 21:27:34 GMT
+[2015-03-09T21:27:34+00:00] DEBUG: content-length: 5
+[2015-03-09T21:27:34+00:00] DEBUG: connection: close
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Status/Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length validated correctly.
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_response
+[2015-03-09T21:27:34+00:00] INFO: Loading cookbooks []
+[2015-03-09T21:27:34+00:00] DEBUG: Cookbooks detail: []
+[2015-03-09T21:27:34+00:00] DEBUG: Cookbooks to compile: []
+[2015-03-09T21:27:34+00:00] DEBUG: Loading Recipe File /home/alan/github/learningchef/chp06/node/hello.rb
+[2015-03-09T21:27:34+00:00] WARN: Node localhost has an empty run list.
+[2015-03-09T21:27:34+00:00] DEBUG: Converging node localhost
+[2015-03-09T21:27:34+00:00] INFO: Processing log[Hello, this is an important message.] action write (@recipe_files::/home/alan/github/learningchef/chp06/node/hello.rb line 1)
+[2015-03-09T21:27:34+00:00] INFO: Hello, this is an important message.
+[2015-03-09T21:27:34+00:00] DEBUG: Saving the current state of node localhost
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_request
+[2015-03-09T21:27:34+00:00] DEBUG: Initiating PUT to http://localhost:8889/nodes/localhost
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Request Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: Accept: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: Accept-Encoding: gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+[2015-03-09T21:27:34+00:00] DEBUG: X-REMOTE-REQUEST-ID: 97483c2a-fac5-4c0a-a389-158ddc775dfa
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length: 26482
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Request Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: #<ChefZero::RestRequest:0x000000045d8280 @env={"CONTENT_LENGTH"=>"26482", "CONTENT_TYPE"=>"application/json", "GATEWAY_INTERFACE"=>"CGI/1.1", "PATH_INFO"=>"/nodes/localhost", "QUERY_STRING"=>"", "REMOTE_ADDR"=>"::1", "REMOTE_HOST"=>"localhost", "REQUEST_METHOD"=>"PUT", "REQUEST_URI"=>"http://localhost:8889/nodes/localhost", "SCRIPT_NAME"=>"", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"8889", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/2.1.4/2014-10-27)", "HTTP_ACCEPT"=>"application/json", "HTTP_ACCEPT_ENCODING"=>"gzip;q=1.0,deflate;q=0.6,identity;q=0.3", "HTTP_X_REMOTE_REQUEST_ID"=>"97483c2a-fac5-4c0a-a389-158ddc775dfa", "HTTP_X_CHEF_VERSION"=>"11.18.0.rc.1", "HTTP_HOST"=>"localhost:8889", "HTTP_USER_AGENT"=>"Chef Knife/11.18.0.rc.1 (ruby-2.1.4-p265; ohai-7.4.0; x86_64-linux; +http://opscode.com)", "HTTP_CONNECTION"=>"close", "rack.version"=>[1, 2], "rack.input"=>#<StringIO:0x000000045d8a28>, "rack.errors"=>#<IO:<STDERR>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "rack.url_scheme"=>"http", "HTTP_VERSION"=>"HTTP/1.1", "REQUEST_PATH"=>"/nodes/localhost"}, @rest_base_prefix=["organizations", "chef"]>
+[2015-03-09T21:27:34+00:00] DEBUG: 
+--- RESPONSE (200) ---
+{
+  "name": "localhost",
+  "chef_environment": "_default",
+  "json_class": "Chef::Node",
+  "automatic": {
+    "kernel": {
+      "name": "Linux",
+      "release": "2.6.32-504.el6.x86_64",
+      "version": "#1 SMP Wed Oct 15 04:27:16 UTC 2014",
+      "machine": "x86_64",
+      "os": "GNU/Linux",
+      "modules": {
+        "vfat": {
+          "size": "10584",
+          "refcount": "5"
+        },
+        "fat": {
+          "size": "54992",
+          "refcount": "1"
+        },
+        "fuse": {
+          "size": "79956",
+          "refcount": "0"
+        },
+        "ebtable_nat": {
+          "size": "2009",
+          "refcount": "0"
+        },
+        "ebtables": {
+          "size": "18135",
+          "refcount": "1"
+        },
+        "ipt_MASQUERADE": {
+          "size": "2466",
+          "refcount": "6"
+        },
+        "iptable_nat": {
+          "size": "6051",
+          "refcount": "1"
+        },
+        "nf_nat": {
+          "size": "23316",
+          "refcount": "2"
+        },
+        "xt_CHECKSUM": {
+          "size": "1303",
+          "refcount": "2"
+        },
+        "iptable_mangle": {
+          "size": "3349",
+          "refcount": "1"
+        },
+        "bridge": {
+          "size": "82775",
+          "refcount": "0"
+        },
+        "autofs4": {
+          "size": "26609",
+          "refcount": "3"
+        },
+        "8021q": {
+          "size": "25527",
+          "refcount": "0"
+        },
+        "garp": {
+          "size": "7152",
+          "refcount": "1"
+        },
+        "stp": {
+          "size": "2218",
+          "refcount": "2"
+        },
+        "llc": {
+          "size": "5578",
+          "refcount": "3"
+        },
+        "vboxpci": {
+          "size": "13813",
+          "refcount": "0"
+        },
+        "vboxnetadp": {
+          "size": "18384",
+          "refcount": "0"
+        },
+        "vboxnetflt": {
+          "size": "17397",
+          "refcount": "0"
+        },
+        "vboxdrv": {
+          "size": "417877",
+          "refcount": "6"
+        },
+        "cpufreq_ondemand": {
+          "size": "10544",
+          "refcount": "4"
+        },
+        "acpi_cpufreq": {
+          "size": "7763",
+          "refcount": "1"
+        },
+        "freq_table": {
+          "size": "4936",
+          "refcount": "2"
+        },
+        "mperf": {
+          "size": "1557",
+          "refcount": "1"
+        },
+        "ipt_REJECT": {
+          "size": "2351",
+          "refcount": "6"
+        },
+        "nf_conntrack_ipv4": {
+          "size": "9506",
+          "refcount": "7"
+        },
+        "nf_defrag_ipv4": {
+          "size": "1483",
+          "refcount": "1"
+        },
+        "iptable_filter": {
+          "size": "2793",
+          "refcount": "1"
+        },
+        "ip_tables": {
+          "size": "17831",
+          "refcount": "3"
+        },
+        "ip6t_REJECT": {
+          "size": "4628",
+          "refcount": "2"
+        },
+        "nf_conntrack_ipv6": {
+          "size": "8337",
+          "refcount": "3"
+        },
+        "nf_defrag_ipv6": {
+          "size": "27236",
+          "refcount": "1"
+        },
+        "xt_state": {
+          "size": "1492",
+          "refcount": "7"
+        },
+        "nf_conntrack": {
+          "size": "80390",
+          "refcount": "6"
+        },
+        "ip6table_filter": {
+          "size": "2889",
+          "refcount": "1"
+        },
+        "ip6_tables": {
+          "size": "18732",
+          "refcount": "1"
+        },
+        "ipv6": {
+          "size": "334932",
+          "refcount": "89"
+        },
+        "vhost_net": {
+          "size": "30913",
+          "refcount": "0"
+        },
+        "macvtap": {
+          "size": "10231",
+          "refcount": "1"
+        },
+        "macvlan": {
+          "size": "9890",
+          "refcount": "1"
+        },
+        "tun": {
+          "size": "16646",
+          "refcount": "3"
+        },
+        "kvm_intel": {
+          "size": "55496",
+          "refcount": "0"
+        },
+        "kvm": {
+          "size": "337772",
+          "refcount": "1"
+        },
+        "microcode": {
+          "size": "112653",
+          "refcount": "0"
+        },
+        "iTCO_wdt": {
+          "size": "7115",
+          "refcount": "0"
+        },
+        "iTCO_vendor_support": {
+          "size": "3056",
+          "refcount": "1"
+        },
+        "snd_usb_audio": {
+          "size": "122027",
+          "refcount": "1"
+        },
+        "snd_usbmidi_lib": {
+          "size": "20976",
+          "refcount": "1"
+        },
+        "snd_rawmidi": {
+          "size": "23017",
+          "refcount": "1"
+        },
+        "ipmi_si": {
+          "size": "44687",
+          "refcount": "0"
+        },
+        "ipmi_msghandler": {
+          "size": "38826",
+          "refcount": "1"
+        },
+        "uvcvideo": {
+          "size": "62688",
+          "refcount": "0"
+        },
+        "videodev": {
+          "size": "75708",
+          "refcount": "1"
+        },
+        "v4l2_compat_ioctl32": {
+          "size": "7110",
+          "refcount": "1"
+        },
+        "i2c_i801": {
+          "size": "10783",
+          "refcount": "0"
+        },
+        "tg3": {
+          "size": "161634",
+          "refcount": "0"
+        },
+        "ptp": {
+          "size": "9614",
+          "refcount": "1"
+        },
+        "pps_core": {
+          "size": "11106",
+          "refcount": "1"
+        },
+        "sg": {
+          "size": "29318",
+          "refcount": "0"
+        },
+        "lpc_ich": {
+          "size": "12995",
+          "refcount": "0"
+        },
+        "mfd_core": {
+          "size": "1895",
+          "refcount": "1"
+        },
+        "snd_hda_codec_hdmi": {
+          "size": "28922",
+          "refcount": "1"
+        },
+        "snd_hda_intel": {
+          "size": "40530",
+          "refcount": "1"
+        },
+        "snd_hda_codec": {
+          "size": "179208",
+          "refcount": "2"
+        },
+        "snd_hwdep": {
+          "size": "6780",
+          "refcount": "2"
+        },
+        "snd_seq": {
+          "size": "55727",
+          "refcount": "0"
+        },
+        "snd_seq_device": {
+          "size": "6500",
+          "refcount": "2"
+        },
+        "snd_pcm": {
+          "size": "87790",
+          "refcount": "4"
+        },
+        "snd_timer": {
+          "size": "22443",
+          "refcount": "2"
+        },
+        "snd": {
+          "size": "70953",
+          "refcount": "15"
+        },
+        "soundcore": {
+          "size": "7958",
+          "refcount": "1"
+        },
+        "snd_page_alloc": {
+          "size": "8856",
+          "refcount": "2"
+        },
+        "shpchp": {
+          "size": "29130",
+          "refcount": "0"
+        },
+        "ext4": {
+          "size": "378476",
+          "refcount": "3"
+        },
+        "jbd2": {
+          "size": "93427",
+          "refcount": "1"
+        },
+        "mbcache": {
+          "size": "8193",
+          "refcount": "1"
+        },
+        "sr_mod": {
+          "size": "15049",
+          "refcount": "0"
+        },
+        "cdrom": {
+          "size": "39085",
+          "refcount": "1"
+        },
+        "sd_mod": {
+          "size": "36998",
+          "refcount": "10"
+        },
+        "crc_t10dif": {
+          "size": "1305",
+          "refcount": "1"
+        },
+        "usb_storage": {
+          "size": "49100",
+          "refcount": "5"
+        },
+        "pata_acpi": {
+          "size": "3701",
+          "refcount": "0"
+        },
+        "ata_generic": {
+          "size": "3837",
+          "refcount": "0"
+        },
+        "ata_piix": {
+          "size": "24409",
+          "refcount": "2"
+        },
+        "nouveau": {
+          "size": "1137798",
+          "refcount": "2"
+        },
+        "ttm": {
+          "size": "81140",
+          "refcount": "1"
+        },
+        "drm_kms_helper": {
+          "size": "82994",
+          "refcount": "1"
+        },
+        "drm": {
+          "size": "291252",
+          "refcount": "4"
+        },
+        "i2c_algo_bit": {
+          "size": "5711",
+          "refcount": "1"
+        },
+        "i2c_core": {
+          "size": "29964",
+          "refcount": "6"
+        },
+        "mxm_wmi": {
+          "size": "1967",
+          "refcount": "1"
+        },
+        "video": {
+          "size": "20610",
+          "refcount": "1"
+        },
+        "output": {
+          "size": "2409",
+          "refcount": "1"
+        },
+        "wmi": {
+          "size": "6287",
+          "refcount": "2"
+        },
+        "dm_mirror": {
+          "size": "14384",
+          "refcount": "0"
+        },
+        "dm_region_hash": {
+          "size": "12085",
+          "refcount": "1"
+        },
+        "dm_log": {
+          "size": "9930",
+          "refcount": "2"
+        },
+        "dm_mod": {
+          "size": "95622",
+          "refcount": "11"
+        }
+      }
+    },
+    "os": "linux",
+    "os_version": "2.6.32-504.el6.x86_64",
+    "lsb": {
+
+    },
+    "platform": "centos",
+    "platform_version": "6.6",
+    "platform_family": "rhel",
+    "virtualization": {
+      "systems": {
+        "kvm": "host"
+      },
+      "system": "kvm",
+      "role": "host"
+    },
+    "network": {
+      "interfaces": {
+        "lo": {
+          "mtu": "65536",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "prefixlen": "8",
+              "netmask": "255.0.0.0",
+              "scope": "Node"
+            },
+            "::1": {
+              "family": "inet6",
+              "prefixlen": "128",
+              "scope": "Node"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            },
+            {
+              "destination": "unreachable",
+              "family": "inet6",
+              "metric": "1024"
+            }
+          ]
+        },
+        "eth0": {
+          "type": "eth",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "3C:D9:2B:7A:94:AE": {
+              "family": "lladdr"
+            },
+            "192.168.0.31": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.0.255",
+              "scope": "Global"
+            },
+            "fe80::3ed9:2bff:fe7a:94ae": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            }
+          },
+          "state": "up",
+          "arp": {
+            "192.168.0.1": "34:08:04:97:5a:93"
+          },
+          "routes": [
+            {
+              "destination": "192.168.0.0/24",
+              "family": "inet",
+              "scope": "link",
+              "metric": "1",
+              "proto": "kernel",
+              "src": "192.168.0.31"
+            },
+            {
+              "destination": "default",
+              "family": "inet",
+              "via": "192.168.0.1",
+              "proto": "static"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        },
+        "virbr1": {
+          "type": "virbr",
+          "number": "1",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:7A:C6:32": {
+              "family": "lladdr"
+            },
+            "192.168.100.1": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.100.255",
+              "scope": "Global"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "192.168.100.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.100.1"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        },
+        "virbr1-nic": {
+          "type": "virbr",
+          "number": "1-nic",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:7A:C6:32": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "virbr0": {
+          "type": "virbr",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:19:9E:D5": {
+              "family": "lladdr"
+            },
+            "192.168.122.1": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.122.255",
+              "scope": "Global"
+            }
+          },
+          "state": "unknown",
+          "routes": [
+            {
+              "destination": "192.168.122.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.122.1"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ]
+        },
+        "virbr0-nic": {
+          "type": "virbr",
+          "number": "0-nic",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "52:54:00:19:9E:D5": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet0": {
+          "type": "vboxnet",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:00": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet1": {
+          "type": "vboxnet",
+          "number": "1",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:01": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet2": {
+          "type": "vboxnet",
+          "number": "2",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:02": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        },
+        "vboxnet3": {
+          "type": "vboxnet",
+          "number": "3",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "0A:00:27:00:00:03": {
+              "family": "lladdr"
+            }
+          },
+          "state": "down"
+        }
+      },
+      "default_interface": "eth0",
+      "default_gateway": "192.168.0.1"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "lo": {
+            "rx": {
+              "bytes": "68308237",
+              "packets": "716702",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "68308237",
+              "packets": "716702",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "eth0": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "12436989",
+              "packets": "142466",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "363901090",
+              "packets": "249954",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "virbr1": {
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "virbr1-nic": {
+            "tx": {
+              "queuelen": "500",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "virbr0": {
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            },
+            "tx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            }
+          },
+          "virbr0-nic": {
+            "tx": {
+              "queuelen": "500",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet0": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet1": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet2": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "vboxnet3": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          }
+        }
+      }
+    },
+    "ipaddress": "192.168.0.31",
+    "macaddress": "3C:D9:2B:7A:94:AE",
+    "ip6address": "fe80::3ed9:2bff:fe7a:94ae",
+    "filesystem": {
+      "/dev/mapper/vg_master-lv_root": {
+        "kb_size": "51475068",
+        "kb_used": "14578060",
+        "kb_available": "34275568",
+        "percent_used": "30%",
+        "mount": "/",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "tmpfs": {
+        "kb_size": "6678068",
+        "kb_used": "25840",
+        "kb_available": "6652228",
+        "percent_used": "1%",
+        "mount": "/dev/shm",
+        "total_inodes": "1669517",
+        "inodes_used": "103",
+        "inodes_available": "1669414",
+        "inodes_percent_used": "1%",
+        "fs_type": "tmpfs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "/dev/sda1": {
+        "kb_size": "487652",
+        "kb_used": "34208",
+        "kb_available": "427844",
+        "percent_used": "8%",
+        "mount": "/boot",
+        "total_inodes": "128016",
+        "inodes_used": "39",
+        "inodes_available": "127977",
+        "inodes_percent_used": "1%",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "/dev/mapper/vg_master-lv_home": {
+        "kb_size": "183105676",
+        "kb_used": "62045484",
+        "kb_available": "111752240",
+        "percent_used": "36%",
+        "mount": "/home",
+        "fs_type": "ext4",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "/dev/sdb6": {
+        "kb_size": "255716",
+        "kb_used": "4",
+        "kb_available": "255712",
+        "percent_used": "1%",
+        "mount": "/media/Hypervisor2",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdb4": {
+        "kb_size": "4031",
+        "kb_used": "200",
+        "kb_available": "3832",
+        "percent_used": "5%",
+        "mount": "/media/Hypervisor0",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdb5": {
+        "kb_size": "255716",
+        "kb_used": "91336",
+        "kb_available": "164380",
+        "percent_used": "36%",
+        "mount": "/media/Hypervisor1",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdb8": {
+        "kb_size": "292752",
+        "kb_used": "144096",
+        "kb_available": "148656",
+        "percent_used": "50%",
+        "mount": "/media/Hypervisor3",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      "/dev/sdc1": {
+        "kb_size": "122820256",
+        "kb_used": "20291424",
+        "kb_available": "102528832",
+        "percent_used": "17%",
+        "mount": "/media/UNTITLED",
+        "fs_type": "vfat",
+        "mount_options": [
+          "rw",
+          "nosuid",
+          "nodev",
+          "uhelper=udisks",
+          "uid=500",
+          "gid=500",
+          "shortname=mixed",
+          "dmask=0077",
+          "utf8=1",
+          "flush"
+        ]
+      },
+      " ": {
+        "total_inodes": "11640832",
+        "inodes_used": "85423",
+        "inodes_available": "11555409",
+        "inodes_percent_used": "1%",
+        "mount": "/home"
+      },
+      "proc": {
+        "mount": "/proc",
+        "fs_type": "proc",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "sysfs": {
+        "mount": "/sys",
+        "fs_type": "sysfs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "devpts": {
+        "mount": "/dev/pts",
+        "fs_type": "devpts",
+        "mount_options": [
+          "rw",
+          "gid=5",
+          "mode=620"
+        ]
+      },
+      "none": {
+        "mount": "/proc/sys/fs/binfmt_misc",
+        "fs_type": "binfmt_misc",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "rootfs": {
+        "mount": "/",
+        "fs_type": "rootfs",
+        "mount_options": [
+          "rw"
+        ]
+      },
+      "devtmpfs": {
+        "mount": "/dev",
+        "fs_type": "devtmpfs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "size=6666732k",
+          "nr_inodes=1666683",
+          "mode=755"
+        ]
+      },
+      "/proc/bus/usb": {
+        "mount": "/proc/bus/usb",
+        "fs_type": "usbfs",
+        "mount_options": [
+          "rw",
+          "relatime"
+        ]
+      },
+      "cgroup": {
+        "mount": "/cgroup/cpuset",
+        "fs_type": "cgroup",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "cpuset"
+        ]
+      },
+      "/etc/auto.misc": {
+        "mount": "/misc",
+        "fs_type": "autofs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "fd=7",
+          "pgrp=2682",
+          "timeout=300",
+          "minproto=5",
+          "maxproto=5",
+          "indirect"
+        ]
+      },
+      "-hosts": {
+        "mount": "/net",
+        "fs_type": "autofs",
+        "mount_options": [
+          "rw",
+          "relatime",
+          "fd=13",
+          "pgrp=2682",
+          "timeout=300",
+          "minproto=5",
+          "maxproto=5",
+          "indirect"
+        ]
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "5095420kB",
+        "free": "5095420kB"
+      },
+      "total": "13356136kB",
+      "free": "5858060kB",
+      "buffers": "210604kB",
+      "cached": "3902260kB",
+      "active": "3416256kB",
+      "inactive": "3007292kB",
+      "dirty": "3564kB",
+      "writeback": "0kB",
+      "anon_pages": "2310648kB",
+      "mapped": "912248kB",
+      "slab": "286268kB",
+      "slab_reclaimable": "233180kB",
+      "slab_unreclaim": "53088kB",
+      "page_tables": "60932kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "11773488kB",
+      "committed_as": "10399700kB",
+      "vmalloc_total": "34359738367kB",
+      "vmalloc_used": "152312kB",
+      "vmalloc_chunk": "34359546636kB"
+    },
+    "cpu": {
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "0",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "1": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "1",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "2": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "2",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "3": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "30",
+        "model_name": "Intel(R) Xeon(R) CPU           X3430  @ 2.40GHz",
+        "stepping": "5",
+        "mhz": "1197.000",
+        "cache_size": "8192 KB",
+        "physical_id": "0",
+        "core_id": "3",
+        "cores": "4",
+        "flags": [
+          "fpu",
+          "vme",
+          "de",
+          "pse",
+          "tsc",
+          "msr",
+          "pae",
+          "mce",
+          "cx8",
+          "apic",
+          "sep",
+          "mtrr",
+          "pge",
+          "mca",
+          "cmov",
+          "pat",
+          "pse36",
+          "clflush",
+          "dts",
+          "acpi",
+          "mmx",
+          "fxsr",
+          "sse",
+          "sse2",
+          "ss",
+          "ht",
+          "tm",
+          "pbe",
+          "syscall",
+          "nx",
+          "rdtscp",
+          "lm",
+          "constant_tsc",
+          "arch_perfmon",
+          "pebs",
+          "bts",
+          "rep_good",
+          "xtopology",
+          "nonstop_tsc",
+          "aperfmperf",
+          "pni",
+          "dtes64",
+          "monitor",
+          "ds_cpl",
+          "vmx",
+          "smx",
+          "est",
+          "tm2",
+          "ssse3",
+          "cx16",
+          "xtpr",
+          "pdcm",
+          "sse4_1",
+          "sse4_2",
+          "popcnt",
+          "lahf_lm",
+          "dts",
+          "tpr_shadow",
+          "vnmi",
+          "flexpriority",
+          "ept",
+          "vpid"
+        ]
+      },
+      "total": 4,
+      "real": 1
+    },
+    "languages": {
+      "lua": {
+        "version": "5.1.4"
+      },
+      "ruby": {
+        "platform": "x86_64-linux",
+        "version": "2.1.4",
+        "release_date": "2014-10-27",
+        "target": "x86_64-unknown-linux-gnu",
+        "target_cpu": "x86_64",
+        "target_vendor": "unknown",
+        "target_os": "linux",
+        "host": "x86_64-unknown-linux-gnu",
+        "host_cpu": "x86_64",
+        "host_os": "linux-gnu",
+        "host_vendor": "unknown",
+        "bin_dir": "/opt/chefdk/embedded/bin",
+        "ruby_bin": "/opt/chefdk/embedded/bin/ruby",
+        "gems_dir": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0",
+        "gem_bin": "/opt/chefdk/embedded/bin/gem"
+      },
+      "python": {
+        "version": "2.6.6",
+        "builddate": "Jan 22 2014, 09:42:36"
+      },
+      "perl": {
+        "version": "5.10.1",
+        "archname": "x86_64-linux-thread-multi"
+      },
+      "java": {
+        "version": "1.8.0_25",
+        "runtime": {
+          "name": "Java(TM) SE Runtime Environment",
+          "build": "1.8.0_25-b17"
+        },
+        "hotspot": {
+          "name": "Java HotSpot(TM) 64-Bit Server VM",
+          "build": "25.25-b02, mixed mode"
+        }
+      },
+      "c": {
+        "gcc": {
+          "version": "4.4.7",
+          "description": "gcc version 4.4.7 20120313 (Red Hat 4.4.7-11) (GCC) "
+        },
+        "glibc": {
+          "version": "2.12",
+          "description": "GNU C Library stable release version 2.12, by Roland McGrath et al."
+        }
+      }
+    },
+    "cloud_v2": null,
+    "etc": {
+      "passwd": {
+        "root": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 0,
+          "shell": "/bin/bash",
+          "gecos": "root"
+        },
+        "bin": {
+          "dir": "/bin",
+          "gid": 1,
+          "uid": 1,
+          "shell": "/sbin/nologin",
+          "gecos": "bin"
+        },
+        "daemon": {
+          "dir": "/sbin",
+          "gid": 2,
+          "uid": 2,
+          "shell": "/sbin/nologin",
+          "gecos": "daemon"
+        },
+        "adm": {
+          "dir": "/var/adm",
+          "gid": 4,
+          "uid": 3,
+          "shell": "/sbin/nologin",
+          "gecos": "adm"
+        },
+        "lp": {
+          "dir": "/var/spool/lpd",
+          "gid": 7,
+          "uid": 4,
+          "shell": "/sbin/nologin",
+          "gecos": "lp"
+        },
+        "sync": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 5,
+          "shell": "/bin/sync",
+          "gecos": "sync"
+        },
+        "shutdown": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 6,
+          "shell": "/sbin/shutdown",
+          "gecos": "shutdown"
+        },
+        "halt": {
+          "dir": "/sbin",
+          "gid": 0,
+          "uid": 7,
+          "shell": "/sbin/halt",
+          "gecos": "halt"
+        },
+        "mail": {
+          "dir": "/var/spool/mail",
+          "gid": 12,
+          "uid": 8,
+          "shell": "/sbin/nologin",
+          "gecos": "mail"
+        },
+        "uucp": {
+          "dir": "/var/spool/uucp",
+          "gid": 14,
+          "uid": 10,
+          "shell": "/sbin/nologin",
+          "gecos": "uucp"
+        },
+        "operator": {
+          "dir": "/root",
+          "gid": 0,
+          "uid": 11,
+          "shell": "/sbin/nologin",
+          "gecos": "operator"
+        },
+        "games": {
+          "dir": "/usr/games",
+          "gid": 100,
+          "uid": 12,
+          "shell": "/sbin/nologin",
+          "gecos": "games"
+        },
+        "gopher": {
+          "dir": "/var/gopher",
+          "gid": 30,
+          "uid": 13,
+          "shell": "/sbin/nologin",
+          "gecos": "gopher"
+        },
+        "ftp": {
+          "dir": "/var/ftp",
+          "gid": 50,
+          "uid": 14,
+          "shell": "/sbin/nologin",
+          "gecos": "FTP User"
+        },
+        "nobody": {
+          "dir": "/",
+          "gid": 99,
+          "uid": 99,
+          "shell": "/sbin/nologin",
+          "gecos": "Nobody"
+        },
+        "dbus": {
+          "dir": "/",
+          "gid": 81,
+          "uid": 81,
+          "shell": "/sbin/nologin",
+          "gecos": "System message bus"
+        },
+        "rpc": {
+          "dir": "/var/cache/rpcbind",
+          "gid": 32,
+          "uid": 32,
+          "shell": "/sbin/nologin",
+          "gecos": "Rpcbind Daemon"
+        },
+        "vcsa": {
+          "dir": "/dev",
+          "gid": 69,
+          "uid": 69,
+          "shell": "/sbin/nologin",
+          "gecos": "virtual console memory owner"
+        },
+        "rtkit": {
+          "dir": "/proc",
+          "gid": 497,
+          "uid": 499,
+          "shell": "/sbin/nologin",
+          "gecos": "RealtimeKit"
+        },
+        "avahi-autoipd": {
+          "dir": "/var/lib/avahi-autoipd",
+          "gid": 170,
+          "uid": 170,
+          "shell": "/sbin/nologin",
+          "gecos": "Avahi IPv4LL Stack"
+        },
+        "abrt": {
+          "dir": "/etc/abrt",
+          "gid": 173,
+          "uid": 173,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "rpcuser": {
+          "dir": "/var/lib/nfs",
+          "gid": 29,
+          "uid": 29,
+          "shell": "/sbin/nologin",
+          "gecos": "RPC Service User"
+        },
+        "nfsnobody": {
+          "dir": "/var/lib/nfs",
+          "gid": 65534,
+          "uid": 65534,
+          "shell": "/sbin/nologin",
+          "gecos": "Anonymous NFS User"
+        },
+        "saslauth": {
+          "dir": "/var/empty/saslauth",
+          "gid": 76,
+          "uid": 498,
+          "shell": "/sbin/nologin",
+          "gecos": "Saslauthd user"
+        },
+        "postfix": {
+          "dir": "/var/spool/postfix",
+          "gid": 89,
+          "uid": 89,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "haldaemon": {
+          "dir": "/",
+          "gid": 68,
+          "uid": 68,
+          "shell": "/sbin/nologin",
+          "gecos": "HAL daemon"
+        },
+        "gdm": {
+          "dir": "/var/lib/gdm",
+          "gid": 42,
+          "uid": 42,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "ntp": {
+          "dir": "/etc/ntp",
+          "gid": 38,
+          "uid": 38,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "radvd": {
+          "dir": "/",
+          "gid": 75,
+          "uid": 75,
+          "shell": "/sbin/nologin",
+          "gecos": "radvd user"
+        },
+        "pulse": {
+          "dir": "/var/run/pulse",
+          "gid": 495,
+          "uid": 497,
+          "shell": "/sbin/nologin",
+          "gecos": "PulseAudio System Daemon"
+        },
+        "qemu": {
+          "dir": "/",
+          "gid": 107,
+          "uid": 107,
+          "shell": "/sbin/nologin",
+          "gecos": "qemu user"
+        },
+        "sshd": {
+          "dir": "/var/empty/sshd",
+          "gid": 74,
+          "uid": 74,
+          "shell": "/sbin/nologin",
+          "gecos": "Privilege-separated SSH"
+        },
+        "tcpdump": {
+          "dir": "/",
+          "gid": 72,
+          "uid": 72,
+          "shell": "/sbin/nologin",
+          "gecos": ""
+        },
+        "oprofile": {
+          "dir": "/home/oprofile",
+          "gid": 16,
+          "uid": 16,
+          "shell": "/sbin/nologin",
+          "gecos": "Special user account to be used by OProfile"
+        },
+        "alan": {
+          "dir": "/home/alan",
+          "gid": 500,
+          "uid": 500,
+          "shell": "/bin/bash",
+          "gecos": "Alan"
+        },
+        "oracle": {
+          "dir": "/u01/app/oracle",
+          "gid": 501,
+          "uid": 501,
+          "shell": "/bin/bash",
+          "gecos": ""
+        },
+        "apache": {
+          "dir": "/var/www",
+          "gid": 48,
+          "uid": 48,
+          "shell": "/sbin/nologin",
+          "gecos": "Apache"
+        },
+        "opscode": {
+          "dir": "/opt/opscode/embedded",
+          "gid": 491,
+          "uid": 496,
+          "shell": "/bin/sh",
+          "gecos": ""
+        },
+        "opscode-pgsql": {
+          "dir": "/var/opt/opscode/postgresql",
+          "gid": 490,
+          "uid": 495,
+          "shell": "/bin/sh",
+          "gecos": ""
+        }
+      },
+      "group": {
+        "root": {
+          "gid": 0,
+          "members": [
+
+          ]
+        },
+        "bin": {
+          "gid": 1,
+          "members": [
+            "bin",
+            "daemon"
+          ]
+        },
+        "daemon": {
+          "gid": 2,
+          "members": [
+            "bin",
+            "daemon"
+          ]
+        },
+        "sys": {
+          "gid": 3,
+          "members": [
+            "bin",
+            "adm"
+          ]
+        },
+        "adm": {
+          "gid": 4,
+          "members": [
+            "adm",
+            "daemon"
+          ]
+        },
+        "tty": {
+          "gid": 5,
+          "members": [
+
+          ]
+        },
+        "disk": {
+          "gid": 6,
+          "members": [
+
+          ]
+        },
+        "lp": {
+          "gid": 7,
+          "members": [
+            "daemon"
+          ]
+        },
+        "mem": {
+          "gid": 8,
+          "members": [
+
+          ]
+        },
+        "kmem": {
+          "gid": 9,
+          "members": [
+
+          ]
+        },
+        "wheel": {
+          "gid": 10,
+          "members": [
+
+          ]
+        },
+        "mail": {
+          "gid": 12,
+          "members": [
+            "mail",
+            "postfix"
+          ]
+        },
+        "uucp": {
+          "gid": 14,
+          "members": [
+
+          ]
+        },
+        "man": {
+          "gid": 15,
+          "members": [
+
+          ]
+        },
+        "games": {
+          "gid": 20,
+          "members": [
+
+          ]
+        },
+        "gopher": {
+          "gid": 30,
+          "members": [
+
+          ]
+        },
+        "video": {
+          "gid": 39,
+          "members": [
+
+          ]
+        },
+        "dip": {
+          "gid": 40,
+          "members": [
+
+          ]
+        },
+        "ftp": {
+          "gid": 50,
+          "members": [
+
+          ]
+        },
+        "lock": {
+          "gid": 54,
+          "members": [
+
+          ]
+        },
+        "audio": {
+          "gid": 63,
+          "members": [
+
+          ]
+        },
+        "nobody": {
+          "gid": 99,
+          "members": [
+
+          ]
+        },
+        "users": {
+          "gid": 100,
+          "members": [
+
+          ]
+        },
+        "dbus": {
+          "gid": 81,
+          "members": [
+
+          ]
+        },
+        "utmp": {
+          "gid": 22,
+          "members": [
+
+          ]
+        },
+        "utempter": {
+          "gid": 35,
+          "members": [
+
+          ]
+        },
+        "rpc": {
+          "gid": 32,
+          "members": [
+
+          ]
+        },
+        "desktop_admin_r": {
+          "gid": 499,
+          "members": [
+
+          ]
+        },
+        "desktop_user_r": {
+          "gid": 498,
+          "members": [
+
+          ]
+        },
+        "floppy": {
+          "gid": 19,
+          "members": [
+
+          ]
+        },
+        "vcsa": {
+          "gid": 69,
+          "members": [
+
+          ]
+        },
+        "rtkit": {
+          "gid": 497,
+          "members": [
+
+          ]
+        },
+        "avahi-autoipd": {
+          "gid": 170,
+          "members": [
+
+          ]
+        },
+        "abrt": {
+          "gid": 173,
+          "members": [
+
+          ]
+        },
+        "cdrom": {
+          "gid": 11,
+          "members": [
+
+          ]
+        },
+        "tape": {
+          "gid": 33,
+          "members": [
+
+          ]
+        },
+        "dialout": {
+          "gid": 18,
+          "members": [
+
+          ]
+        },
+        "rpcuser": {
+          "gid": 29,
+          "members": [
+
+          ]
+        },
+        "nfsnobody": {
+          "gid": 65534,
+          "members": [
+
+          ]
+        },
+        "cgred": {
+          "gid": 496,
+          "members": [
+
+          ]
+        },
+        "saslauth": {
+          "gid": 76,
+          "members": [
+
+          ]
+        },
+        "postdrop": {
+          "gid": 90,
+          "members": [
+
+          ]
+        },
+        "postfix": {
+          "gid": 89,
+          "members": [
+
+          ]
+        },
+        "wbpriv": {
+          "gid": 88,
+          "members": [
+
+          ]
+        },
+        "haldaemon": {
+          "gid": 68,
+          "members": [
+            "haldaemon"
+          ]
+        },
+        "gdm": {
+          "gid": 42,
+          "members": [
+
+          ]
+        },
+        "ntp": {
+          "gid": 38,
+          "members": [
+
+          ]
+        },
+        "radvd": {
+          "gid": 75,
+          "members": [
+
+          ]
+        },
+        "pulse": {
+          "gid": 495,
+          "members": [
+
+          ]
+        },
+        "pulse-access": {
+          "gid": 494,
+          "members": [
+
+          ]
+        },
+        "fuse": {
+          "gid": 493,
+          "members": [
+
+          ]
+        },
+        "kvm": {
+          "gid": 36,
+          "members": [
+            "qemu"
+          ]
+        },
+        "qemu": {
+          "gid": 107,
+          "members": [
+
+          ]
+        },
+        "sshd": {
+          "gid": 74,
+          "members": [
+
+          ]
+        },
+        "tcpdump": {
+          "gid": 72,
+          "members": [
+
+          ]
+        },
+        "stapusr": {
+          "gid": 156,
+          "members": [
+
+          ]
+        },
+        "stapsys": {
+          "gid": 157,
+          "members": [
+
+          ]
+        },
+        "stapdev": {
+          "gid": 158,
+          "members": [
+
+          ]
+        },
+        "oprofile": {
+          "gid": 16,
+          "members": [
+
+          ]
+        },
+        "slocate": {
+          "gid": 21,
+          "members": [
+
+          ]
+        },
+        "alan": {
+          "gid": 500,
+          "members": [
+
+          ]
+        },
+        "vboxusers": {
+          "gid": 492,
+          "members": [
+
+          ]
+        },
+        "dba": {
+          "gid": 501,
+          "members": [
+
+          ]
+        },
+        "apache": {
+          "gid": 48,
+          "members": [
+
+          ]
+        },
+        "opscode": {
+          "gid": 491,
+          "members": [
+            "opscode"
+          ]
+        },
+        "opscode-pgsql": {
+          "gid": 490,
+          "members": [
+
+          ]
+        }
+      }
+    },
+    "current_user": "alan",
+    "root_group": "root",
+    "chef_packages": {
+      "chef": {
+        "version": "11.18.0.rc.1",
+        "chef_root": "/opt/chefdk/embedded/apps/chef/lib"
+      },
+      "ohai": {
+        "version": "7.4.0",
+        "ohai_root": "/opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/ohai-7.4.0/lib/ohai"
+      }
+    },
+    "init_package": "init",
+    "block_device": {
+      "ram0": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram1": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram2": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram3": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram4": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram5": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram6": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram7": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram8": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram9": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram10": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram11": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram12": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram13": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram14": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "ram15": {
+        "size": "32768",
+        "removable": "0"
+      },
+      "loop0": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop1": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop2": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop3": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop4": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop5": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop6": {
+        "size": "0",
+        "removable": "0"
+      },
+      "loop7": {
+        "size": "0",
+        "removable": "0"
+      },
+      "sda": {
+        "size": "488397168",
+        "removable": "0",
+        "model": "VB0250EAVER",
+        "rev": "HPG0",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "ATA"
+      },
+      "sr0": {
+        "size": "2097151",
+        "removable": "1",
+        "model": "DVDROM DH40N",
+        "rev": "IS01",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "hp"
+      },
+      "dm-0": {
+        "size": "104857600",
+        "removable": "0"
+      },
+      "dm-1": {
+        "size": "10190848",
+        "removable": "0"
+      },
+      "sdb": {
+        "size": "3940352",
+        "removable": "1",
+        "model": "USB Disk",
+        "rev": "8.07",
+        "state": "running",
+        "timeout": "30",
+        "vendor": ""
+      },
+      "dm-2": {
+        "size": "372318208",
+        "removable": "0"
+      },
+      "sdc": {
+        "size": "245764608",
+        "removable": "1",
+        "model": "DataTraveler 3.0",
+        "rev": "PMAP",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "Kingston"
+      }
+    },
+    "command": {
+      "ps": "ps -ef"
+    },
+    "dmi": {
+      "dmidecode_version": "2.12"
+    },
+    "keys": {
+      "ssh": {
+
+      }
+    },
+    "ohai_time": 1425936453.9438195,
+    "uptime_seconds": 4227,
+    "uptime": "1 hours 10 minutes 27 seconds",
+    "idletime_seconds": 15256,
+    "idletime": "4 hours 14 minutes 16 seconds",
+    "hostname": "master",
+    "machinename": "master.localdomain",
+    "fqdn": "localhost",
+    "domain": null,
+    "recipes": [
+
+    ],
+    "roles": [
+
+    ]
+  },
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "chef_type": "node",
+  "default": {
+
+  },
+  "override": {
+
+  },
+  "run_list": [
+
+  ]
+}
+
+--- END RESPONSE ---
+[2015-03-09T21:27:34+00:00] DEBUG: ---- HTTP Status and Header Data: ----
+[2015-03-09T21:27:34+00:00] DEBUG: HTTP 1.1 200 OK 
+[2015-03-09T21:27:34+00:00] DEBUG: content-type: application/json
+[2015-03-09T21:27:34+00:00] DEBUG: server: chef-zero
+[2015-03-09T21:27:34+00:00] DEBUG: date: Mon, 09 Mar 2015 21:27:34 GMT
+[2015-03-09T21:27:34+00:00] DEBUG: content-length: 52652
+[2015-03-09T21:27:34+00:00] DEBUG: connection: close
+[2015-03-09T21:27:34+00:00] DEBUG: ---- End HTTP Status/Header Data ----
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::ValidateContentLength#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Content-Length validated correctly.
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::RemoteRequestID#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Authenticator#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::Decompressor#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::CookieManager#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONToModelOutput#handle_response
+[2015-03-09T21:27:34+00:00] DEBUG: Chef::HTTP calling Chef::HTTP::JSONInput#handle_response
+[2015-03-09T21:27:34+00:00] INFO: Chef Run complete in 0.05316352 seconds
+[2015-03-09T21:27:34+00:00] INFO: Running report handlers
+[2015-03-09T21:27:34+00:00] INFO: Report handlers complete
+[2015-03-09T21:27:34+00:00] DEBUG: Server doesn't support resource history, skipping resource report.
+[2015-03-09T21:27:34+00:00] DEBUG: Forked instance successfully reaped (pid: 16020)
+[2015-03-09T21:27:36+00:00] DEBUG: Exiting
