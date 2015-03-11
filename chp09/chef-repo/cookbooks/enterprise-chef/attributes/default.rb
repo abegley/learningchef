@@ -1,0 +1,2 @@
+default['enterprise-chef']['url'] = 'http://192.168.0.31:8888/content/chef-server-core-12.0.0_rc.6-1.el6.x86_64.rpm'
+default['opscode-manage']['url'] = 'http://192.168.0.31:8888/content/opscode-manage-1.6.2-1.el6.x86_64.rpm'
