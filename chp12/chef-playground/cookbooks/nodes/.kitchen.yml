@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  nodes_path: ../../../../chp11/cookbooks/chef-playground/nodes/
+
+platforms:
+  - name: centos-6.6
+    driver:
+      box: opscode_centos-6.6_chef-latest.box
+      box_url:  opscode_centos-6.6_chef-latest.box
+
+suites:
+  - name: default
+    run_list:
+      - recipe[nodes::default]
+    attributes:
