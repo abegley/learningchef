@@ -9,3 +9,7 @@ end
 describe command('curl localhost:80') do
   its(:stdout) { should match /eth1/ }
 end
+
+describe package('httpd') do
+  it { should be_installed }
+end
